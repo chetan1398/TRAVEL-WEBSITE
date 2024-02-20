@@ -1,5 +1,5 @@
-# INFO 6150 - ASSIGNMENT 4 
-The goal of this assignment is to learn about CSS positioning, Grid layout & Flexbox, and SCSS features like variables, mixins, inheritance, control statements, functions, operators etc.
+# TRAVEL WEBSITE
+The goal of this project is to learn about HTML and CSS positioning, Grid layout & Flexbox, and SCSS features like variables, mixins, inheritance, control statements, functions, operators etc.
 
 
 -_variables.scss: Defines global variables for colors, fonts, and breakpoints, used across all components for consistency.
