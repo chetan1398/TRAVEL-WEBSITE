@@ -1,0 +1,100 @@
+.clientReviews{
+    /* Setting the background color */
+    background-color: #F8F8F8;
+    z-index: -2;
+}
+.clientReviews .assest-1{
+    position: absolute;
+    margin-top: -2.9rem;
+    margin-left: 2rem;
+    height: 10rem;
+}
+.clientReviews .assest-2{
+    position: absolute;
+    margin-top: -2.5rem;
+    right: 0;
+}
+.clientReviews .assest-3{
+    position: absolute;
+    margin-top: 6.2rem;
+}
+.clientReviews .client-content{
+    padding-top: 0.2rem;
+    padding-bottom: 17rem;
+}
+.clientReviews .client-content h1{
+    padding-top: 0.2rem;
+    @include content-center;
+}
+.clientReviews .review-person-container{
+    @include content-center;
+}
+.clientReviews .review-person{
+    height: 6rem;
+    border-radius: 50%;
+    width: 6rem;
+    object-fit: cover;
+    @include content-center;
+    border: solid 4px $secondary-color;
+    z-index: 2;
+}
+.clientReviews .content-paragh{
+    background-color: $secondary-color;
+    width: 30%;
+    padding: 4rem;
+    border-radius: 2rem;
+    position: absolute;
+    margin-left: 29rem;
+    margin-top: -2rem;
+    font-size: 0.8rem;
+    padding-bottom: 5rem;
+}
+.clientReviews .bold-name{
+    position: absolute;
+    font-weight: bolder;
+    margin-top: 2rem;
+    margin-left: 9rem;
+}
+.clientReviews input{
+    border: none;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    color: white;
+    background-color: #00000098;
+}
+.clientReviews .arrow-left{
+    position: absolute;
+    margin-left: 27.5rem;
+    margin-top: 9rem;
+    z-index: 3;
+    width: 1rem;
+    height: 1rem;
+    background-color: #000000c4;
+    padding: 1rem;
+    border-radius: 50%;
+}
+.clientReviews .arrow-left img {
+    height: 1.2rem;
+    margin-left: -0.1rem;
+    margin-top: -0.1rem;
+    filter: invert(100%) sepia(10%) saturate(40%) hue-rotate(326deg) brightness(100%) contrast(82%);
+
+}
+.clientReviews .arrow-right{
+    position: absolute;
+    margin-left: 64rem;
+    margin-top: 2.5rem;
+    z-index: 3;
+    width: 1rem;
+    height: 1rem;
+    background-color: #000000c4;
+    padding: 1rem;
+    border-radius: 50%;
+}
+.clientReviews .arrow-right img {
+    height: 1.2rem;
+    margin-left: -0.1rem;
+    margin-top: -0.1rem;
+    filter: invert(100%) sepia(10%) saturate(40%) hue-rotate(326deg) brightness(100%) contrast(82%);
+}

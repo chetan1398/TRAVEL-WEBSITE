@@ -1,0 +1,17 @@
+@mixin li(){
+    list-style: none;
+    text-decoration: none;
+}
+
+@mixin primary-btn(){
+    border: none;
+    width: auto;
+    background-color: $primary-color;
+    font-family: $font-family;
+    color: #ffff;
+}
+
+@mixin content-center(){
+    display: flex;
+    justify-content: center;
+}

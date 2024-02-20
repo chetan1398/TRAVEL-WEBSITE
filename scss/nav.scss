@@ -1,0 +1,49 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+    position: fixed;
+    top: 0;
+    width: 95%;
+}
+nav .nav-logo{
+    height: 4rem;
+}
+
+nav ul{
+    display: flex;
+    padding: 10px;
+}
+nav ul li{
+    color: white;
+    margin: 0px 20px;
+    @include li;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+}
+nav ul li a:focus{
+    border-bottom: solid 2px $primary-color;
+}
+nav .primary-btn{
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

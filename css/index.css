@@ -1,0 +1,984 @@
+/* Importing required font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200;300;400;500&display=swap');
+
+
+/* All the fonts will be organised in alphabetical order */
+
+/* Some common keywords and meanings */
+/* 
+@import: Used to import external styles or fonts. In this case, it imports the Roboto Condensed font from Google Fonts.
+
+body: Styles applied to the overall body of the HTML document, including setting the font family and margin.
+
+margin: Specifies the space around an element. In the context of body, it removes any default margin around the entire document.
+
+font-family: Defines the font used for text within the specified element or the entire document if applied to body.
+
+h4: Represents a style applied to all h4 tags. It sets the text color, font size, and centers the content horizontally.
+
+color: Specifies the text color of an element.
+
+background-color: Sets the background color of an element, providing a visual backdrop for content.
+
+filter: grayscale(100%): Applies a grayscale effect to images, making them appear in grayscale.
+
+z-index: Controls the stacking order of elements, determining which elements appear in front of others.
+
+position: Specifies the positioning method for an element (e.g., relative, absolute).
+
+display: Defines the display behavior of an element (e.g., flex, grid).
+
+justify-content: Aligns content along the main axis of a container (e.g., centering content horizontally).
+
+img: Styles applied specifically to images, such as setting height and width.
+
+:hover: Represents a state when an element is being hovered over, allowing for the definition of styles in that state.
+
+border: Sets the border properties for an element.
+
+border-radius: Defines the rounded corners of an element's border.
+
+outline: Specifies a line around an element outside the border.
+
+outline: none: Removes the default outline that browsers apply to focused elements.
+
+padding: Defines the inner spacing within an element.
+
+text-decoration: Sets the decoration of text, such as underline or none.
+
+placeholder: Styles applied to the placeholder text inside an input field.
+
+::before and ::after: Pseudo-elements used to insert content before and after an element's actual content.*/
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+}
+/* common style for all h4 tags */
+
+h4{
+    color: #DF6951;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.bookedCustomers{
+    margin-top: 15px;
+}
+
+.companies-associated{
+    background-color: #F7F7F7;
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+}
+
+.companies-associated img{
+    height: 6rem !important;
+    width: 6rem !important;
+    /* We need the images to be in grayscale */
+    filter: grayscale(100%);       
+}
+.companies-associated img:first-child{
+    height: 6rem !important;
+    /* we adjust the height of the first image */
+}
+
+/* We have a seperate container of review */
+.clientReviews{
+    /* Setting the background color */
+    background-color: #F8F8F8;
+    z-index: -2;
+}
+.clientReviews .assest-1{
+    position: absolute;
+    margin-top: -2.9rem;
+    margin-left: 2rem;
+    height: 10rem;
+}
+.clientReviews .assest-2{
+    position: absolute;
+    margin-top: -2.5rem;
+    right: 0;
+}
+.clientReviews .assest-3{
+    position: absolute;
+    margin-top: 6.2rem;
+}
+.clientReviews .client-content{
+    padding-top: 0.2rem;
+    padding-bottom: 17rem;
+}
+.clientReviews .client-content h1{
+    padding-top: 0.2rem;
+    display: flex;
+    justify-content: center;
+}
+.clientReviews .review-person-container{
+    display: flex;
+    justify-content: center;
+}
+.clientReviews .review-person{
+    height: 6rem;
+    border-radius: 50%;
+    width: 6rem;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    border: solid 4px #ffff;
+    z-index: 2;
+}
+.clientReviews .content-paragh{
+    background-color: #ffff;
+    width: 30%;
+    padding: 4rem;
+    border-radius: 2rem;
+    position: absolute;
+    margin-left: 29rem;
+    margin-top: -2rem;
+    font-size: 0.8rem;
+    padding-bottom: 5rem;
+}
+.clientReviews .bold-name{
+    position: absolute;
+    font-weight: bolder;
+    margin-top: 2rem;
+    margin-left: 9rem;
+}
+.clientReviews input{
+    border: none;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    color: white;
+    background-color: #00000098;
+}
+.clientReviews .arrow-left{
+    position: absolute;
+    margin-left: 27.5rem;
+    margin-top: 9rem;
+    z-index: 3;
+    width: 1rem;
+    height: 1rem;
+    background-color: #000000c4;
+    padding: 1rem;
+    border-radius: 50%;
+}
+.clientReviews .arrow-left img {
+    height: 1.2rem;
+    margin-left: -0.1rem;
+    margin-top: -0.1rem;
+    filter: invert(100%) sepia(10%) saturate(40%) hue-rotate(326deg) brightness(100%) contrast(82%);
+
+}
+.clientReviews .arrow-right{
+    position: absolute;
+    margin-left: 64rem;
+    margin-top: 2.5rem;
+    z-index: 3;
+    width: 1rem;
+    height: 1rem;
+    background-color: #000000c4;
+    padding: 1rem;
+    border-radius: 50%;
+}
+.clientReviews .arrow-right img {
+    height: 1.2rem;
+    margin-left: -0.1rem;
+    margin-top: -0.1rem;
+    filter: invert(100%) sepia(10%) saturate(40%) hue-rotate(326deg) brightness(100%) contrast(82%);
+
+}
+
+/* Styles associated to footer */
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 2rem 7rem;
+}
+.footer-1 .footer-logo{
+    height: 5rem;
+    margin-left: -3rem;
+}
+.footer-1 p{
+    color: #7F7A9E;
+    font-size: 0.9rem;
+    width: 80%;
+    margin-top: -0.2rem;
+}
+.footer-1 .footer-social{
+    height: 1rem;
+}
+.footer h5{
+    font-size: 1rem;
+    color: #7A8CA0;
+}
+footer ul{
+    padding-left: 0;
+    text-decoration: none;
+}
+.footer ul li{
+    list-style: none;
+    text-decoration: none !important;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: #292F58;
+}
+.footer .email-input{
+    padding: 0.8rem;
+    outline: none;
+    border: none;
+    background-color: #d7eaf4b3;
+    height: 1.2rem;
+}
+
+.footer .email-input::placeholder{
+    color: #7F7A9E;
+}
+.footer .primary-btn{
+    height: auto;
+    margin-left: -0.8rem;
+    border-radius: 10px;
+    padding: 15px 25px 30px 25px;
+}
+.footer-bottom-conatiner{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    border-top: #c4c4c4 0.13rem solid;
+    width: 50%;
+    color: #292F58;
+}
+
+/* styles related to people image below searchBox */
+
+
+#peopleImage{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: -10px;
+    border: solid 2px #ffff;
+}
+#peopleImage:nth-child(1){
+    margin-left: 0px;
+}
+
+/* below are the styles related to nav */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+    position: fixed;
+    top: 0;
+    width: 95%;
+}
+nav .nav-logo{
+    height: 4rem;
+}
+
+nav ul{
+    display: flex;
+    padding: 10px;
+}
+nav ul li{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    margin: 0px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+}
+nav ul li a:focus{
+    border-bottom: solid 2px #DF6951;
+}
+nav .primary-btn{
+    margin-top: 1rem;
+}
+.services-selection{
+    background-color: transparent;
+    border: none;
+    color: #ffff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1rem;
+}
+.services-selection option{
+    padding-top: 12rem;
+    background-color: #9e9e9e;
+    padding: 1rem;
+    border: none;
+    margin-top: 4rem;
+    font-size: small;
+    backdrop-filter: blur(5px);
+
+}
+.home-background{
+    background-image: url('../assests/images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+
+.home{
+    margin-left: 10rem;
+    padding-bottom: 10rem;
+}
+
+.home-title{
+    padding: 10rem 0rem 0rem 0rem;
+}
+
+.home-title .symbol{
+    font: 14px;
+    color: #DF6951;
+}
+
+.home-moto{
+    color: white;
+    width: 25%;
+}
+.honeymoon_Package_details{
+    margin: auto;
+    text-align: left;
+    align-items: start;
+    width: 80%;
+}
+.honeymoon_Package_details h4, .honeymoon_Package_details h1{
+    display: flex;
+    justify-content: left !important;
+    width: 60%;
+}
+
+.honeymoon_Package_details ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.honeymoon_Package_details ul li .package-info{
+    margin: 2rem 0rem;
+    align-items: start;
+}
+
+.honeymoon_Package_details ul li .package-info{
+    display: flex;
+}
+.honeymoon_Package_details ul li .package-info h5{
+    margin: 0;
+    margin-top: 0.5rem;
+}
+.honeymoon_Package_details ul li .package-info p{
+    margin: 0;
+    width: 60%;
+    font-size: 0.8rem;
+}
+
+.honeymoon_Package_details ul li .package-info img{
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+.searchBox{
+    background-color: #ffffff86;
+    width: fit-content;
+    padding:12px;
+    backdrop-filter: blur(5px);
+    border-radius: 4px;
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.searchBox label{
+    color:#ffff;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0.5rem;
+    border-left: solid #ffff 0.1rem;
+    padding-left: 1.5rem;
+}
+.searchBox .primary-input{
+    border-right: 0 !important;
+}
+.searchBox .primary-btn{
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.6rem 1.5rem 0.8rem 1.5rem;
+}
+.section-split-image{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+.section-split-image-assest{
+    position: absolute;
+    left: 0;
+    margin-top: 10rem;
+    margin-left: 38rem;
+}
+.section-split-image .text-section{
+    display: flex;
+    justify-content: center;
+}
+.text-section h1{
+    position: absolute;
+    margin-left: 38rem;
+    color: #ffff;
+    margin-top: -16rem;
+    width: 20%;
+}
+
+.secondary-section-divider{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.section-divider-with-btn{
+    height: 20rem;
+}
+.section-divider-with-btn .inner-container{
+    margin-top: 5rem;
+}
+.section-divider-with-btn h1{
+    color: #ffff;
+    text-align: center;
+}
+.section-divider-with-btn h4{
+    color: #ffff;
+}
+.section-divider-with-btn .btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.scroll-indicator{
+    color: #ffff;
+    position: absolute;
+    margin-left: -7.1rem;
+    margin-top: 3rem;
+    border-radius: 50%;
+    border:dotted #ffff 0.1rem;
+    padding: 5rem;
+    height: 3rem;
+    width: 3rem;
+}
+.scroll-indicator-1{
+    color: #ffff;
+    position: absolute;
+    margin-left: -9rem;
+    margin-top: 1rem;
+    border-radius: 50%;
+    border:dotted #ffff 0.1rem;
+    padding: 7rem;
+    height: 3rem;
+    width: 3rem;
+}
+
+.left{
+    background-image: url("../assests/images/landScape-1.jpg");
+    background-size: cover;
+}
+.right{
+background-image: url("../assests/images/home-screen-background.jpg");
+background-size: cover;
+}
+
+
+.services h1{
+    display: flex;
+    justify-content: center;
+}
+.services h4{
+    display: flex;
+    justify-content: center;
+}
+
+.service-card-container{
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 8rem;
+    margin: 5rem;
+}
+.service-card-container .sub-services{
+    align-items: center;
+    padding: 1rem;
+    z-index: 1;
+    position: relative;
+}
+.service-card-container .sub .orange-backdrop{
+    visibility: hidden;
+}
+
+.service-card-container .sub:hover .orange-backdrop{
+    visibility: visible;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1.5rem;
+    background-color: #DF6951;
+    border: solid 0.1rem #DF6951;
+    margin-left: -1.5rem;
+    margin-top: -2.5rem;
+    position: absolute;
+    z-index: -1;
+}
+
+.service-card-container :hover .sub-services{
+    border-radius: 20px;
+    box-shadow: rgba(196, 196, 196, 0.404) -10px 10px 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.service-card-container .sub-services h5{
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.service-card-container .sub-services .sub-service-image{
+    display: flex;
+    justify-content: center;
+
+}
+.service-card-container .sub-services img{
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.service-card-container .sub-services p{
+    text-align: center;
+}
+
+/* package container styles */
+
+.package-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 5rem;
+}
+.package-container .package-container-right .inner-card{
+    z-index: -2;
+    position: relative;
+    border-radius: 1rem;
+    background-color: #ffff;
+    box-shadow: rgba(196, 196, 196, 0.404) -10px 10px 20px;
+    padding: 1.1rem;
+    width: fit-content;
+}
+.package-container .package-container-right .inner-card h5{
+    margin-top: 0.2rem;
+    margin-left: 0.3rem;
+    margin-bottom: 0.2rem;
+}
+.package-container .package-container-right .inner-card .details{
+    display: flex;
+    color: #c4c4c4;
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+    margin-left: 0.3rem;
+
+}
+.package-container .package-container-right .inner-card .details-2{
+    padding-left: 0.5rem;
+    border-left: solid #c4c4c4 1px;
+    margin-left: 0.3rem;
+}
+.package-container .package-container-right .inner-card img{
+    height: 1.5rem;
+    margin-top: 0.5rem;
+}
+.package-container .package-container-right{
+    margin-left: 12rem;
+    margin-top: 5rem;
+}
+
+.package-container .package-container-right .airplane{
+    height: 8rem;
+    position: absolute;
+    z-index: -3;
+    margin-left: 10rem;
+}
+
+
+.package-container .package-container-right .inner-card .inner-card-image{
+    height: 7rem;
+    width: 13rem;
+    object-fit: cover;
+    border-radius: 1.4rem;
+}
+/* people intrested styles */
+.people-intrested{
+    color: #c4c4c4; 
+    font-size: 1rem;
+    margin-left: -0.5rem;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.people-intrested-text{
+    margin-left: -1rem;
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+}
+.people-intrested img{
+    height: 0.5rem !important;
+    width: 0.5rem;
+}
+.inner-sub-container{
+    display: grid;
+    grid-template-columns: 0.25fr 0.75fr;
+    width: 12rem;
+    gap: 0.5rem;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    box-shadow: rgba(196, 196, 196, 0.404) -10px 10px 20px;
+    position: absolute;
+    margin-left: 7rem;
+    margin-top: -8.5rem;
+    z-index: 5;
+    background-color: #ffff;
+}
+.inner-sub-container .ongoing-img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+.loading{
+    height: 0.5rem;
+}
+
+/* package container styles */
+
+.package-container .package-text{
+    position: absolute;
+    font-size:3rem;
+    height: 100%;
+    color: #c4c4c482;
+    text-orientation:sideways;
+    writing-mode: vertical-rl;
+    margin-top: -26.5rem;
+    margin-left: 6.5rem;
+    z-index: -2;
+
+}
+.package-container .couple-1{
+    height: 30rem;
+    width: 20rem;
+    border-radius: 20rem 20rem 0 0rem;
+    object-fit: cover;
+    position: relative;
+    margin-left: 10rem;
+}
+.package-container .border-1-div{
+    height: 30rem;
+    width: 20rem;
+    border: solid 2px #000;
+    position: absolute;
+    margin-left: 10.5rem;
+    margin-top: -0.5rem;
+    border-image: linear-gradient(#d037f2, #148ae4);
+    border-width: 0.13rem;
+    border-style:solid;
+    border-radius: 30px;
+    background-image: linear-gradient(white, white), 
+                      linear-gradient(to right, #148ae4, #d037f2);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border-radius: 20rem 20rem 0 0rem !important;
+    border-bottom: 0;
+
+
+}
+.package-container .couple-2{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: -26.5rem;
+    margin-top: 9rem;
+    position: absolute;
+
+
+}
+.package-container .couple-3{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    margin-left: -23rem;
+}
+.package-container .couple-4{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    margin-left: -15rem;
+    margin-top: -2rem;
+}
+.package-container:last-child{
+margin-bottom: 4rem;
+}
+
+.primary-input{
+    background-color: transparent;
+    border: none;
+    border-right: solid 2px white;
+    color: white;
+    min-width: 40px;
+    padding: 6px;
+    outline: none;
+}
+.primary-input::placeholder{
+    color: white;
+}
+
+
+.primary-btn{
+    max-height: 38px;
+    border: none;
+    width: auto;
+    background-color: #DF6951;
+    border-radius: 4px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffff;
+    padding: 12px;
+}
+
+.primary-btn-small{
+    max-height: 18px;
+    border: none;
+    width: auto;
+    background-color: #DF6951;
+    border-radius: 12px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffff;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 0.5rem;
+}
+
+.promotion-secondary{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5rem 10rem;
+}
+.promotion-secondary h4{
+    justify-content: start;
+}
+
+.promotion-secondary .image-array{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2rem;
+}
+
+.promotion-secondary .image-array .europe-image img{
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.promotion-secondary .image-array .europe-image .primary-btn-small{
+    position: absolute;
+    margin-left: -4rem;
+    margin-top: 0.7rem;
+}
+.promotion-secondary .promotion-large{
+    height: 30rem;
+    border-radius: 10rem 10rem 0rem 0rem;
+    margin-left: 7rem;
+}
+.border-2-div{
+    height: 30rem;
+    position: absolute;
+    margin-left: 6.5rem;
+    margin-top: -0.7rem;
+    border-bottom: 0 !important;
+    z-index: -3;
+    border-image: linear-gradient(#d037f2, #148ae4);
+border-width: 0.13rem;
+border-style:solid;
+border-radius: 30px;
+background-image: linear-gradient(white, white), 
+                  linear-gradient(to right, #148ae4, #d037f2);
+background-origin: border-box;
+background-clip: content-box, border-box;
+border-radius: 10rem 10rem 0rem 0rem !important;
+    /* border: solid 0.1rem #000; */
+    width: 20.8rem;
+}
+.promotion-secondary .promotion-mini{
+    position: absolute;
+    margin-top: -6.8rem;
+}
+.promotion-secondary .promotion-mini .primary-btn-small{
+    position: absolute;
+    margin-top: -6.1rem;
+    margin-left: 6rem;
+    
+}
+
+.promotion-secondary .promotion-mini img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 1rem;
+    object-fit: cover;
+    width: 10rem;
+}
+
+.europe-promotion-text{
+    font-size: 3rem;
+    position: absolute;
+    color: #c4c4c4aa;
+    text-orientation:sideways;
+    writing-mode: vertical-rl;
+    height: 100%;
+    margin-left: 27rem;
+    margin-top: 6rem;
+}
+/* trendy packages styles */
+.trendy-packages{
+    align-items: center;
+}
+.trendy-packages h1{
+    text-align: center;
+}
+.trendy-packages .package-card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+    margin: 5rem 20rem;
+}
+.trendy-packages .card_Background{
+    height: 15rem;
+    width: 100%;
+    border-radius: 0.4rem;
+}
+.trendy-packages .card_flag{
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    border: solid 0.2rem #ffff;
+    position: absolute;
+    object-fit: cover;
+    margin-left: -14rem;
+    margin-top: 13rem;
+    box-shadow: rgb(147 145 145) 0px 5px 7px;
+}
+.trendy-packages .packageCard ul{
+    display: flex;
+    padding-left: 0;
+    margin: 0 ;
+    margin-top: 1rem;
+}
+.trendy-packages .packageCard ul li{
+    list-style: none;
+    display: flex;
+    margin-top: -0.2rem;
+    margin-right: 1.5rem;
+}
+.trendy-packages .packageCard ul li img{
+    width: 1.6rem;
+    height: 1.8rem;
+}
+.trendy-packages .packageCard ul li:nth-child(2) img{
+    margin-top: 0.5rem;
+    height: 1.1rem;
+    width: 1.1rem;
+}
+.trendy-packages .packageCard ul li .text{
+    margin-top: 0.7rem;
+    margin-left: 0.2rem;
+    color: #c4c4c4;
+    font-size: 0.8rem;
+}
+.trendy-packages .packageCard h4{
+    justify-content: start;
+    color: #000;
+}
+.trendy-packages .place_Nd_Review{
+    display: flex;
+    margin-top: -0.8rem;
+    justify-content: space-between;
+}
+
+.trendy-packages .place_Nd_Review img{
+    height: 1rem;
+    margin-top: 1.4rem;
+}
+.trendy-packages .map{
+    display: flex;
+    margin-top: -1.5rem;
+}
+
+.trendy-packages .map img{
+    height: 1rem;
+    margin-top: 1.05rem;
+    margin-right: 0.5rem;
+}
+
+.trendy-packages .map p{
+    font-size: 0.8rem;
+    margin-top: 1.1rem;
+}
+.trendy-packages .price{
+    display: flex;
+    font-size: 1.1rem;
+    color: #DF6951;
+    margin-top: -0.3rem;
+}
+.trendy-packages .price .discounted{
+    margin-right: 2rem;
+}
+.trendy-packages .price .actual{
+    text-decoration: line-through;
+}
+.package-brief
+{
+    font-size: 0.8rem;
+    margin-top: -0.4rem;
+}
+
+
+
+
+#company-logo{
+    height: 30px;
+    object-fit: contain;
+    width: 100px;
+}
+.primary-btn:hover{
+    cursor: pointer;
+}
+.primary-btn-small:hover{
+    cursor: pointer;
+}
+
+.secondary-btn{
+    max-height: 38px;
+    border: solid 0.1rem #ffff;
+    width: auto;
+    background-color: transparent;
+    border-radius: 4px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffff;
+    padding: 10px;
+}
+.secondary-btn:hover{
+    cursor: pointer;
+}

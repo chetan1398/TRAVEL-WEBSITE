@@ -1,0 +1,12 @@
+.primary-input{
+    background-color: transparent;
+    border: none;
+    border-right: solid 2px $secondary-color;
+    color: $secondary-color;
+    min-width: 40px;
+    padding: 6px;
+    outline: none;
+}
+.primary-input::placeholder{
+    color: $secondary-color;
+}

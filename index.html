@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- We will link our style sheet -->
+        <!-- We only use styles for images , as they might cover up the entire screen  -->
+        <link rel="stylesheet" href = "css/index.css">
+        <!-- Title for our web Page -->
+        <title>
+            Travel Booking
+        </title>
+    </head> 
+    <body>
+        <div class="home-background">
+        <!-- Creating a nav for our webpage -->
+            <nav>
+                <img src="./assests/images/Travel-logo.png" class="nav-logo"/>
+                <ul>
+                    <li>
+                        <a href="#home_page">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about_page">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <!-- We can observe that our Services is a dropdown selection -->
+                            <select name="services" id="services" class="services-selection">
+                            <option value="honeymoon_Packages" default class="options"><div class="options">Services</div></option>
+                            <option value="honeymoon_Packages">Honeymoon Packages</option>
+                            <option value="tours_Packages">Tours Packages</option>
+                            <option value="musical_Events">Musical Events</option>
+                            <option value="build_Package">Build Package</option>
+                            </select>
+                    </li>
+                    <li>
+                        <a href="#upcoming_page">
+                            Upcoming Packages
+                        </a>
+                    </li>
+                </ul>
+                <input type="button" value="Get in Touch" class="primary-btn">
+            </nav>
+            <!-- The below div contains the contents of Home -->
+            <div id="home" class="home">
+                <div class="home-title">
+                    <h1 class="symbol">
+                        ^^^^^
+                    </h1>
+                    <div class="home-moto">
+                        <h1>
+                            No Matter Where you're going , we'll take you there
+                        </h1>
+                    </div>
+                </div>
+                
+                <!-- We have a query request and input fields , hence we use a form tag -->
+                <form id="searchBox" action="post" class="searchBox">
+                    <input type="text" name="destination" placeholder="Where to?" class="primary-input">
+
+                    <label for="travelType">Travel Type</label>
+                    <select name="travelType" id="travelType" class="primary-input"></select>
+                
+                    <label for="duration">Duration</label>
+                    <select name="duration" id="duration" class="primary-input"></select>
+                    
+                    <input type="submit" value="Submit" class="primary-btn">
+                </form>
+                <!-- We note that we will be adding basic css for images , as they might take up entire page -->
+                <div id="bookedCustomers" class="bookedCustomers">
+                    <image src = "./assests/images/person-1.jpg" id="peopleImage" alt="person-1"></image>
+                    <image src = "./assests/images/person-2.jpg" id="peopleImage" alt="person-2"></image>
+                    <image src = "./assests/images/person-3.jpg" id="peopleImage" alt="person-3"></image>
+                    <image src = "./assests/images/person-4.jpg" id="peopleImage" alt="person-4"></image>
+                    <image src = "./assests/images/person-5.jpg" id="peopleImage" alt="person-5"></image>
+                    <image src = "./assests/images/person-6.jpg" id="peopleImage" alt="person-6"></image>
+                    <image src = "./assests/icons/plus-image.png" id="peopleImage" alt="plus-image"></image>
+                    2,500 people booked Tommorowland Event in the last 24 hours
+                </div>
+                <div id="scroll-indicator" class="scroll-indicator">
+                    Scroll
+                </div>
+                <div class="scroll-indicator-1"></div>
+                <div class="scroll-indicator-2"></div>
+            </div>
+        </div>
+        <div class="companies-associated">
+            <image src = "./assests/images/compay-1.png" id="company-logo" alt="compay-1"></image>
+            <image src = "./assests/images/company-2.svg" id="company-logo" alt="company-2"></image>
+            <image src = "./assests/images/company-3.png" id="company-logo" alt="company-3"></image>
+            <image src = "./assests/images/company-4.png" id="company-logo" alt="company-4"></image>
+            <image src = "./assests/images/company-5.png" id="company-logo" alt="company-5"></image>
+        </div>
+        <!-- Below div contains contents of Services -->
+        <div class="services" id="services">
+            <h4>
+                Category
+            </h4>
+            <h1>
+                We Offer Best Services
+            </h1>
+            <!-- We can note that the below div is repeated , we can use a card component , but for now , we will duplicate the code and rename fields -->
+            <div class="service-card-container">
+                <div class="sub">
+                    <div class="sub-services">
+                    <div class="sub-service-image">
+                        <img src="./assests/icons/web-sub-series-1.png" alt="web-sub-series-1"/>
+                    </div>
+                    <h5>
+                        Guided Tours
+                    </h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="orange-backdrop">
+                    </div>
+                </div>
+                <div class="sub">
+                    <div class="sub-services">
+                    <div class="sub-service-image">
+                        <img src="./assests/icons/web-sub-series-2.png" alt="web-sub-series-2"/>
+                    </div>
+                    <h5>
+                        Best Flight Options
+                    </h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="orange-backdrop">
+                    </div>
+                </div>
+                <div class="sub">
+                    <div class="sub-services">
+                    
+                    <div class="sub-service-image">
+                        <img src="./assests/icons/web-sub-series-3.png" alt="web-sub-series-3"/>
+                    </div>
+                    <h5>
+                        Religious Tours
+                    </h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="orange-backdrop">
+                    </div>
+                </div>
+                <div class="sub">
+                    <div class="sub-services">
+                    
+                    <div class="sub-service-image">
+                        <img src="./assests/icons/web-sub-series-4.png" alt="web-sub-series-4"/>
+                    </div>
+                    <h5>
+                        Medical Insurance
+                    </h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="orange-backdrop">
+                    </div>
+                </div>
+            </div>
+            <div class="package-container">
+                <div>
+                    <div class="border-1-div">
+                    </div>
+                    <img src = "./assests/images/couple-1.jpg" id="honeymoon_Package" alt="web-images-1" class="couple-1"/>
+                    <img src = "./assests/images/couple-2.jpg" id="honeymoon_Package" alt="web-images-1" class="couple-2"/>
+                    <img src = "./assests/images/couple-3.jpg" id="honeymoon_Package" alt="web-images-1" class="couple-3"/>
+                    <img src = "./assests/images/couple-4.jpg" id="honeymoon_Package" alt="web-images-1" class="couple-4"/>
+                    <div class="package-text">Honeymoon Packages</div>
+                </div>
+                <div id="honeymoon_Package_details" class="honeymoon_Package_details">
+                    <h4>
+                        Honeymoon Specials
+                    </h4>
+                    <h1>
+                        Our Romantic Tropical Destinations
+                    </h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Ex illum ut natus aspernatur autem voluptates inventore 
+                        necessitatibus quae, non laborum, qui quibusdam explicabo 
+                        eos vero velit? Hic eaque odit doloribus.
+                    </p>
+                    <input type="button" value="View Packages" class="primary-btn"/>
+                </div>
+            </div>
+            <div class="package-container">
+                <div id="honeymoon_Package_details" class="honeymoon_Package_details">
+                    <h4>
+                        Fast & Easy
+                    </h4>
+                    <h1>
+                        Get Your Favourite Resort Bookings
+                    </h1>
+                    <ul>
+                        <li>
+                            <div class="package-info">
+                                <div>
+                                    <img src="./assests/images/web-images-sub-section-1.png" alt="web-images-sub-section-1"/>
+                                </div>
+                                <div>
+                                    <h5>Choose Destination</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor eligendi.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="package-info">
+                                <div>
+                                    <img src="./assests/images/web-images-sub-section-2.png" alt="web-images-sub-section-2"/>
+                                </div>
+                                <div>
+                                    <h5>Choose Destination</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor eligendi.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="package-info">
+                                <div>
+                                    <img src="./assests/images/web-images-sub-section-3.png" alt="web-images-sub-section-3"/>
+                                </div>
+                                <div>
+                                    <h5>Choose Destination</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor eligendi.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <input type="button" value="View Packages" class="primary-btn"/>
+                </div>
+                <div class="package-container-right">
+                    <img src="./assests/images/airplane.png" class="airplane"/>
+                    <div class="inner-card">
+                        <img src="./assests/images/hawaii.jpg" class="inner-card-image">
+                        <h5>Trip to Hawaii</h5>
+                        <div class="details">
+                            <div>14-29 June</div>
+                            <div class="details-2">by JR Martin</div>
+                        </div>
+                        <img src="./assests/images/icons-inner.png"/>
+                        <div class="people-intrested">
+                            <img src="./assests/images/inner-container-img.png" class="people-intrested"/>
+                            <div class="people-intrested-text">60 people are intrested</div>
+                            <img src="./assests/images/orange-heart.png"/>
+                        </div>
+                    </div>
+                    <div class="inner-sub-container">
+                        <div>
+                            <img src="./assests/images/paris.jpg" class="ongoing-img">
+                        </div>
+                        <div>
+                            <div>
+                                Ongoing
+                            </div>
+                            <div>
+                                40% completed
+                            </div>
+                            <div>
+                                <img src="./assests/images/loading.png" class="loading"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div id="section-split-image">
+            <img src="./assests/images/landScape-1.jpg" alt="web-images-3" class="section-split-image"/>
+            <img src="./assests/images/assest-section.png" alt="web-images-3" class="section-split-image-assest"/>
+            <div class="text-section">
+                    <h1>
+                        Let's Make your next Holiday Amazing
+                    </h1>
+            </div>
+        </div>
+        <!-- below div contains the code for Promotions -->
+        <div id="promotions" class="promotion-secondary">
+            <div>
+                <h4>PROMOTION</h4>
+                <h1>We Provide You Best Europe Sightseeing Tours</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit. Facere reiciendis quasi, repellat sit suscipit
+                    nemo sed officiis vel quos facilis accusamus exercitationem
+                    ea vero vitae iusto atque ex praesentium numquam.
+                </p>
+                <input type="button" value="View Packages" class="primary-btn"/>
+                <div class="image-array">
+                    <div class="europe-image">
+                        <img src="./assests/images/london.jpg" alt="web-promotion-1" />
+                        <input type="button" value="$400" class="primary-btn-small"/>
+                    </div>
+                    <div class="europe-image">
+                        <img src="./assests/images/italy.jpg" alt="web-promotion-2" />
+                        <input type="button" value="$400" class="primary-btn-small"/>
+                    </div>
+                    <div class="europe-image">
+                        <img src="./assests/images/switserland.jpg" alt="web-promotion-3" />
+                        <input type="button" value="$400" class="primary-btn-small"/>
+                    </div>
+                </div>
+                
+            </div>
+            <div>
+                <div class="border-2-div"></div>
+                <div class="europe-promotion-text">Breath Taking Views</div>
+                <img src="./assests/images/paris.jpg" alt="web-promotion-4" class="promotion-large"/>
+                <div class="promotion-mini">
+                <img src="./assests/images/europe.jpg" alt="web-promotion-4" class="promotion-mini"/>
+                <input type="button" value="$400" class="primary-btn-small"/>
+                </div>
+            </div>
+        </div>
+        <div class="secondary-section-divider">
+            <div class="section-divider-with-btn left">
+                <div class="inner-container">
+                    <h4>PROMOTION</h4>
+                    <h1>EXPLORE NATURE</h1>
+                    <div class="btn-container">
+                        <input type="button" value="View Packages" class="secondary-btn"/>
+                    </div>
+                </div>
+            </div>
+            <div class="section-divider-with-btn right">
+                <div class="inner-container">
+                    <h4>PROMOTION</h4>
+                    <h1>EXPLORE CITIES</h1>
+                    <div class="btn-container">
+                        <input type="button" value="View Packages" class="secondary-btn"/>
+                    </div>
+            </div>
+            </div>
+        </div>
+        <div class="trendy-packages">
+            <h4>TRENDY</h4>
+            <h1>Our Trending Tour Packages</h1>
+            <div class="package-card-container">
+                <!-- Below we now create a package , by which we mean that , this pattern will repeat, hence we name this as package id  -->
+                <div id="packageCard" class="packageCard">
+                    <!-- Below we add an image for each destination -->
+                    <img src="./assests/images/switserland.jpg" alt="switserland" id="card_Background" class="card_Background"/>  
+                    <!-- This specifies , the Country of the destination  -->
+                    <img src="./assests/images/Civil_Ensign_of_Switzerland.png" alt="switserland-flag" id="card_flag" class="card_flag"/> 
+                    <!-- Further information such as number of days and total travel people is a seperate div -->
+                    <div class="info-1">
+                        <ul>
+                          <li>
+                            <img src="./assests/icons/calender-web-1.png" alt="calender-icon" id="card_icon"/>
+                            <div class="text">
+                                8 Days
+                            </div>
+                          </li> 
+                          <li>
+                            <img src="./assests/icons/people-web-1.png" alt="people-icon" id="card_icon"/>
+                            <div class="text">
+                                25 People Going
+                            </div>
+                          </li> 
+                        </ul> 
+                    </div>
+                    <!-- Similarly we create seperate div's for each details , which can help us to style them later -->
+                    <div class="place_Nd_Review">
+                        <h4>Switzerland</h4>
+                        <img src="./assests/icons/5star-web.png" alt="5-star-image" id="card_icon"/>
+                    </div>
+                    <div class="map">
+                        <img src="./assests/icons/map-web-1.png" alt="map" id="card_icon"/>
+                        <p>Europe</p>
+                    </div>
+                    <div class="price">
+                        <div class="discounted">
+                            1200$
+                        </div>
+                        <div class="actual">
+                            1200$
+                        </div>
+                    </div>
+                    <div class="package-brief">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                           Officiis nisi et impedit corrupti beatae autem explicabo 
+                           eius? Soluta rerum ullam tenetur modi. Rerum sunt, vero 
+                           veniam dolorem dolores assumenda soluta.</p>
+                    </div>
+                    <div>
+                        <input type="button" value="Explore Now" class="primary-btn"/>
+                    </div>
+                </div>
+                <div id="packageCard" class="packageCard">
+                    <!-- Below we add an image for each destination -->
+                    <img src="./assests/images/bird.jpg" alt="bird" id="card_Background" class="card_Background"/>  
+                    <!-- This specifies , the Country of the destination  -->
+                    <img src="./assests/images/Brazil_flag_300.png" alt="brazil-flag" id="card_flag" class="card_flag"/> 
+                    <!-- Further information such as number of days and total travel people is a seperate div -->
+                    <div>
+                        <ul>
+                          <li>
+                            <img src="./assests/icons/calender-web-1.png" alt="calender-icon" id="card_icon"/>
+                            <div class="text">
+                                8 Days
+                            </div>
+                          </li> 
+                          <li>
+                            <img src="./assests/icons/people-web-1.png" alt="people-icon" id="card_icon"/>
+                            <div class="text">
+                                30 People Going
+                            </div>
+                          </li> 
+                        </ul> 
+                    </div>
+                    <!-- Similarly we create seperate div's for each details , which can help us to style them later -->
+                    <div class="place_Nd_Review">
+                        <h4>Amazon</h4>
+                        <img src="./assests/icons/5star-web.png" alt="5-star-image" id="card_icon"/>
+                    </div>
+                    <div class="map">
+                        <img src="./assests/icons/map-web-1.png" alt="map" id="card_icon"/>
+                        <p>Brazil</p>
+                    </div>
+                    <div class="price">
+                        <div class="discounted">
+                            1200$
+                        </div>
+                        <div class="actual">
+                            1200$
+                        </div>
+                    </div>
+                    <div class="package-brief">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                           Officiis nisi et impedit corrupti beatae autem explicabo 
+                           eius? Soluta rerum ullam tenetur modi. Rerum sunt, vero 
+                           veniam dolorem dolores assumenda soluta.</p>
+                    </div>
+                    <div>
+                        <input type="button" value="Explore Now" class="primary-btn"/>
+                    </div>
+                </div>
+                <div id="packageCard" class="packageCard">
+                    <!-- Below we add an image for each destination -->
+                    <img src="./assests/images/pyramid.jpg" alt="pyramid" id="card_Background" class="card_Background"/>  
+                    <!-- This specifies , the Country of the destination  -->
+                    <img src="./assests/images/Flag_of_Egypt.png" alt="-Egypt-flag" id="card_flag" class="card_flag"/> 
+                    <!-- Further information such as number of days and total travel people is a seperate div -->
+                    <div>
+                        <ul>
+                          <li>
+                            <img src="./assests/icons/calender-web-1.png" alt="calender-icon" id="card_icon"/>
+                            <div class="text">
+                                8 Days
+                            </div>
+                          </li> 
+                          <li>
+                            <img src="./assests/icons/people-web-1.png" alt="people-icon" id="card_icon"/>
+                            <div class="text">
+                                155 People Going
+                            </div>
+                          </li> 
+                        </ul> 
+                    </div>
+                    <!-- Similarly we create seperate div's for each details , which can help us to style them later -->
+                    <div class="place_Nd_Review">
+                        <h4>Giza</h4>
+                        <img src="./assests/icons/5star-web.png" alt="5-star-image" id="card_icon"/>
+                    </div>
+                    <div class="map">
+                        <img src="./assests/icons/map-web-1.png" alt="map" id="card_icon"/>
+                        <p>Egypt</p>
+                    </div>
+                    <div class="price">
+                        <div class="discounted">
+                            1200$
+                        </div>
+                        <div class="actual">
+                            1200$
+                        </div>
+                    </div>
+                    <div class="package-brief">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                           Officiis nisi et impedit corrupti beatae autem explicabo 
+                           eius? Soluta rerum ullam tenetur modi. Rerum sunt, vero 
+                           veniam dolorem dolores assumenda soluta.</p>
+                    </div>
+                    <div>
+                        <input type="button" value="Explore Now" class="primary-btn"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Below div contains the code foe client Reviews -->
+        <div id="clientReviews" class="clientReviews">
+            <div>
+                <img src="./assests/images/assest-2.png" alt="shell" id="review-background-assest" class="assest-1"/>
+                <img src="./assests/images/back-3.png" alt="back-3" id="review-background-assest" class="assest-2"/>
+            </div>
+            <div class="client-content">
+                <h4>PROMOTION</h4>
+                <h1>
+                    See What our Clients are telling about us
+                </h1>
+                <div class="arrow-left">
+                    <img src="./assests/icons/left.png"/>
+                </div>
+                <div class="review-person-container">
+                    <img src="./assests/images/person-1.jpg" alt="person-1" id="review-person" class="review-person"/>
+                </div>
+                <div class="content-paragh">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ut earum suscipit neque nostrum beatae tenetur expedita nemo corporis quis id numquam temporibus, ab explicabo ipsum iure ipsa dolores! Provident.
+                    <div class="bold-name">Christian Beckham Designer</div>
+                </div>
+                <div class="arrow-right">
+                    <img src="./assests/icons/next.png"/>
+                </div>                <div>
+                    <img src="./assests/images/back-2.png" alt="back-2" id="review-background-assest" class="assest-3"/>
+                </div>
+            </div>
+        </div>
+    </body>
+    <!-- Now we have the footer for our web page -->
+    <footer>
+        <div class="footer">
+        <div class="footer-1">
+            <img src="./assests/images/Travel-logo.png" alt="Travel-logo" id="footer-logo" class="footer-logo"/>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+            <img src="./assests/images/footer-social.png" alt="footer-social" id="footer-social" class="footer-social"/>
+        </div>
+        <!-- All the links are clickable and navigate to the same or different web page -->
+        <div class="footer-2">
+            <h5>Company</h5>
+            <ul>
+                <li>
+                    <a href="home">
+                    About US
+                    </a>
+                </li>
+                <li>
+                    <a href="Carrers">
+                        Carrers
+                    </a>
+                </li>
+                <li>
+                    <a href="Blog">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="Pricing">
+                        Pricing
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h5>Destinations</h5>
+            <ul>
+                <li>
+                    <a href="maldives">
+                    Maldives
+                    </a>
+                </li>
+                <li>
+                    <a href="losAngeles">
+                        Los Angeles
+                    </a>
+                </li>
+                <li>
+                    <a href="lasVegas">
+                        Las Vegas
+                    </a>
+                </li>
+                <li>
+                    <a href="torronto">
+                        Torronto
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h5>
+                Join Our Newsletter
+            </h5>
+            <form>
+                <input type="text" placeholder="Your email address" class="email-input"/>
+                <input type="submit" value="Submit" class="primary-btn"/>
+            </form>
+            <p>Will send you weekly updates for your better tour packages</p>
+        </div>
+    </div>
+    <div class="footer-bottom-conatiner">
+        <div class="footer-bottom">
+            <p>
+                Copyright @Xpro 2022.All Rights Reserved.
+            </p>
+        </div>
+    </div>
+       
+    </footer>
+</html>

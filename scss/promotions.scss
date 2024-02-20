@@ -1,0 +1,80 @@
+
+.promotion-secondary{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5rem 10rem;
+}
+.promotion-secondary h4{
+    justify-content: start;
+}
+
+.promotion-secondary .image-array{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2rem;
+}
+
+.promotion-secondary .image-array .europe-image img{
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.promotion-secondary .image-array .europe-image .primary-btn-small{
+    position: absolute;
+    margin-left: -4rem;
+    margin-top: 0.7rem;
+}
+.promotion-secondary .promotion-large{
+    height: 30rem;
+    border-radius: 10rem 10rem 0rem 0rem;
+    margin-left: 7rem;
+}
+.border-2-div{
+    height: 30rem;
+    position: absolute;
+    margin-left: 6.5rem;
+    margin-top: -0.7rem;
+    border-bottom: 0 !important;
+    z-index: -3;
+    border-image: linear-gradient(#d037f2, #148ae4);
+border-width: 0.13rem;
+border-style:solid;
+border-radius: 30px;
+background-image: linear-gradient(white, white), 
+                  linear-gradient(to right, #148ae4, #d037f2);
+background-origin: border-box;
+background-clip: content-box, border-box;
+border-radius: 10rem 10rem 0rem 0rem !important;
+    /* border: solid 0.1rem #000; */
+    width: 20.8rem;
+}
+.promotion-secondary .promotion-mini{
+    position: absolute;
+    margin-top: -5.8rem;
+}
+.promotion-secondary .promotion-mini .primary-btn-small{
+    position: absolute;
+    margin-top: -6.1rem;
+    margin-left: 6rem;
+    
+}
+
+.promotion-secondary .promotion-mini img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 1rem;
+    object-fit: cover;
+    width: 10rem;
+}
+
+.europe-promotion-text{
+    font-size: 3rem;
+    position: absolute;
+    color: #c4c4c4aa;
+    text-orientation:sideways;
+    writing-mode: vertical-rl;
+    height: 100%;
+    margin-left: 27rem;
+    margin-top: 3rem;
+}

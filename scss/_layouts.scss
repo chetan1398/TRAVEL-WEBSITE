@@ -1,0 +1,8 @@
+@each $size in $spacing-sizes{
+    .mg-#{$size}{
+        margin: #{$size}px;
+    }
+    .pd-#{$size}{
+        padding: #{$size}px;
+    }
+}
